@@ -14,3 +14,6 @@
 - componentDidUpdate
 ## 销毁阶段
 - componentWillUnmount
+
+![Image](./Images/1002356-20171112152153638-1298399753.jpg
+)
