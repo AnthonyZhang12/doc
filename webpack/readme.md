@@ -10,7 +10,7 @@
 
 - 默认值为: ./src
 
-### demo
+- demo
 
 ```js
 const config = {
@@ -34,7 +34,7 @@ const config = {
 - output 属性告诉 webpack 在哪里输出它所创建的 bundles，以及如何命名这些文件
 - 默认值为: ./dist
 
-### Demo
+- Demo
 
 ```js
 const path = require('path');
@@ -70,9 +70,9 @@ module.exports = {
 - loader 支持链式传递。能够对资源使用流水线(pipeline)。一组链式的 loader 将按照相反的顺序执行。loader 链中的第一个 loader 返回值给下一个 loader。在最后一个 loader，返回 webpack 所预期的 JavaScript
 - 常用loader： babel-loader, style-loader, css-loader, sass-loader, less-Loader, file-loader, url-loader, json-loader, row-loader
 
-### Demo
+- Demo
 
-- configuration
+1. configuration
 
 ```js
   module: {
@@ -83,13 +83,13 @@ module.exports = {
   }
 ```
 
-- 内联
+2. 内联
 
 ```js
   import Styles from 'style-loader!css-loader?modules!./styles.css';
 ```
 
-- CLI
+3. CLI
 
 ```js
   webpack --module-bind jade-loader --module-bind 'css=style-loader!css-loader'
@@ -101,7 +101,7 @@ module.exports = {
 - 插件目的在于解决 loader 无法实现的其他事。
 - HtmlWebpackPlugin, ExtractTextWebpackPlugin, DefinePlugin, ProvidePlugin, CleanWebpackPlugin, CommonsChunkPlugin, ProcessBarWebpackPlugin, StyleLintWebpackPlugin, HappyPack
 
-### Demo
+- Demo
 
 ```javascript
 plugins: [
