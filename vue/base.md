@@ -1,3 +1,5 @@
+[来源](https://segmentfault.com/a/1190000006599500)
+
 # vue 原理 - 数据劫持以及发布者-订阅者模式
 
 ## Observer
@@ -16,3 +18,4 @@ Object.DefineProperty() 中定义了 setter 和 getter, 每当数据发生变化
 
 主要做的事情是解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图，并将每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一旦数据有变动，收到通知，更新视图。
 
+![Image](./vue_principle.png)
