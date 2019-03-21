@@ -39,3 +39,9 @@ user=root
 log_stderr=true
 logfile=/var/log/shadowsocks.log
 ```
+
+
+
+247680a7593c60fa07dd953e94aae1e3e8a1c6d4
+5fc77f502dbbd840f3ae09e956ab804a
+
