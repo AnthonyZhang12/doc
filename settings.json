@@ -1,0 +1,65 @@
+{
+    //"workbench.iconTheme": "vscode-icons", //工作台图标主题
+    // 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    // 以像素为单位控制字号。
+    "editor.fontSize": 18,
+    // 控制终端游标是否闪烁。
+    "terminal.integrated.cursorBlinking": true,
+    // 保存时候自动格式化
+    "editor.formatOnSave": false,
+    // 让vue中的js按编辑器自带的ts格式进行格式化
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.validation.template": false,
+    // 用来进行保存时自动格式化，但是默认只支持 javascript .js 文件
+    "eslint.autoFixOnSave": false,
+    // 终端cmd字体
+    "terminal.integrated.fontFamily": "monospace",
+    // 终端cmd字号
+    "terminal.integrated.fontSize": 16,
+    // 默认格式化html使用js-beautify-html
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+      "js-beautify-html": {
+        // [auto|force|force-aligned|force-expand-multiline]
+        // 属性多行排列
+        "wrap_attributes": "auto" // vue组件中html代码格式化样式
+      }
+    },
+    "eslint.validate": [
+      "html",
+      "js",
+      {
+        // 这样就能够直接支持在html和vue中自动保存成eslint风格的代码
+        "language": "html",
+        "autoFix": true
+      },
+      {
+        "language": "javascript",
+        "autoFix": true
+      }
+    ],
+    // 防止格式化代码后单引号变双引号
+    // "prettier.singleQuote": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "files.autoSave": "off",
+    "workbench.startupEditor": "newUntitledFile",
+    "git.confirmSync": false,
+    "files.autoSaveDelay": 3000,
+    //"gitlens.historyExplorer.enabled": true,
+    //"terminal.integrated.rendererType": "dom",
+    "search.followSymlinks": false, // "easysass.compileAfterSave": true,
+    // "easysass.excludeRegex": "",
+    // "easysass.formats": [
+    //   {
+    //     "format": "compact",
+    //     "extension": ".css"
+    //   }
+    // ],
+    // "easysass.targetDir": "",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": true,
+    "git.ignoreLimitWarning": true
+  }
